@@ -1,0 +1,5 @@
+tk
+customtkinter
+jinja2
+pyinstaller
+flask
