@@ -16,11 +16,9 @@ def get_gogyo():
         time_text = data.get("time", "")
         sex = data.get("sex", 0)  # Default: Male (0), Female (1)
 
-        # Convert date & time
         date = date_converter(birthday_text)
         birthday, t_flag = time_converter(date, time_text)
 
-        # Run Meishiki calculation
         meishiki = Meishiki(birthday, t_flag, sex)
         meishiki.build_meishiki()
 
